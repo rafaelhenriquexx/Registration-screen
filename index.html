@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">Cadastro</h1>
+    </div>
+    <form method="GET">
+        <fieldset>
+            <div>
+
+            <label for="name"><strong>Nome</strong></label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+
+            <br><br>
+            <label for="lastname"><strong>Sobrenome</strong></label>
+            <br>
+            <input type="text" name="subname" id="subname" placeholder="Digite seu sobrenome" required>
+
+            <br><br>
+            <label><strong>Data de Nascimento</strong></label>
+            <br>
+            <input type="date" name="date" id="date" required>
+            <br><br>
+
+            <label for="email"><strong>E-mail</strong></label>
+            <br>
+            <input type="email" name="email" id="email"  placeholder="Digite seu email" required>
+            <br><br>
+
+        </div>
+        <div>
+            <label><strong>Sexo</strong></label>
+            <br>
+            <label>Masculino</label>
+            <input type="radio" name="radio">
+
+            <label>Feminino</label>
+            <input type="radio" name="radio">
+            <br><br>
+        </div>
+        <div>
+            <label><strong>Telefone</strong></label>
+            <br>
+            <input  type="tel" name="tel" id="tel">
+            <br><br>
+             <label><strong>Foto do Perfil</strong></label>
+             <br>
+             <input type="file" name="file" id="file">
+             <br><br>
+            <label><strong>Biografia</strong></label>
+            <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <br><br>
+            <label><strong>Senha</strong></label>
+            <input type="password" name="password" id="password">
+            <br><br>
+        </div>
+        <div>
+            <button type="reset" id="reset"><Label><strong>Limpar dados</strong>
+            </Label>
+            </button>
+            <button id="button" type="submit" id="submit"><Label><strong>Enviar</strong></Label></button>
+        </div>
+    </fieldset>
+    </form>
+ 
+    <script src="./form.js"></script>
+</body>
+
+</html>
