@@ -3,16 +3,18 @@
     padding: 0;
     font-family: sans-serif;
 }
-
-#title{  
+fieldset{
+    border: 0;
     
-    margin-left: 3%;
-    margin-bottom: 4%;
+}
+#title{  
+    margin-right: 150px;
+    margin-bottom: 25px;  
 }
 
 #textarea, #name, #subname, #email, #date, #tel, #password {
     border: 1px solid;
-    box-shadow: 2px 2px 5px black; 
+    box-shadow: 5px 5px 10px black; 
     margin-top: 3px;
     display: block;  
     padding: 6px;
@@ -21,20 +23,19 @@
 #reset, #submit{
     margin-top: -5px;
 }
-
-fieldset{
-    border: 0;
-}
-body{
-    background-color: rgb(255, 255, 255);
+#master{   
     font-size: 16px;
-    color: rgb(172, 104, 235);
-    margin-top: -780px;
-    position: absolute;
-    left: 50%;
-    top: 50%;   
-    transform: translate(-50%, 50%);
-     
+    color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    margin-top: -1000px;
+}
+#picture{
+    height: 150vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center ;   
+
 }
 input, textarea, button{
     border-radius: 5px;
@@ -42,18 +43,13 @@ input, textarea, button{
 }
 button{
     font-size: 15px;
-    box-shadow: 2px 2px 5px black;   
+    box-shadow: 3px 3px 8px black;   
     padding: 3px;
     margin-bottom: 15px;
     cursor: pointer;
-    background-color: rgb(172, 104, 235);
-        
+    background-color: rgb(252, 252, 252);    
 }
-button :hover{
-    background-color: rgb(197, 161, 231);
-    transition: 1s;
 
-}
 .errorInput{
-    border: 2px solid rgb(228, 91, 91) !important
+    border: 4px solid rgb(228, 91, 91) !important
 }

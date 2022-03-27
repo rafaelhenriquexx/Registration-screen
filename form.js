@@ -19,9 +19,11 @@ button.addEventListener('click', (event) =>{
         email.classList.remove('errorInput') 
     }
 
-    if(password.value === '' || password.value.length < 7){
+    if(password.value === '' || password.value.length < 6){
         password.classList.add('errorInput')
+        alert('Use uma senha de no mínimo 6 dígitos');
     }
+
     else{
       password.classList.remove('errorInput')  
     }
@@ -55,6 +57,5 @@ button.addEventListener('click', (event) =>{
         tel.classList.add('errorInput')
 
     }
-
-   
+  
 })
